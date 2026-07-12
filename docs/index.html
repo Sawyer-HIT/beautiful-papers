@@ -1,21 +1,47 @@
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paper PDF</title>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>PDF 在线阅读</title>
+
     <style>
-        html, body {
+        html,
+        body {
             width: 100%;
             height: 100%;
             margin: 0;
+            overflow: hidden;
         }
 
-        iframe {
+        object {
             width: 100%;
             height: 100%;
-            border: none;
+            border: 0;
+        }
+
+        .fallback {
+            padding: 30px;
+            font-family: Arial, sans-serif;
         }
     </style>
 </head>
+
 <body>
-    <iframe src="./2026-NM-NichTrans spatial aware cross-omics translation" title="Paper PDF"></iframe>
+    <object
+        data="./2026-NM-NichTrans spatial aware cross-omics translation.pdf#view=FitH"
+        type="application/pdf">
+
+        <div class="fallback">
+            <p>当前浏览器无法嵌入显示 PDF。</p>
+            <p>
+                <a href="./2026-NM-NichTrans spatial aware cross-omics translation.pdf" target="_blank">
+                    点击这里在线打开 PDF
+                </a>
+            </p>
+        </div>
+    </object>
 </body>
 </html>
